@@ -34,6 +34,9 @@ theme:
         icon: material/weather-sunny
         name: 밝은 화면으로
 
+extra:
+  generator: false                 # 바닥글 'Made with Zensical' 숨김
+
 extra_css:
   - stylesheets/extra.css
 
