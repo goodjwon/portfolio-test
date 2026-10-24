@@ -7,7 +7,7 @@ repo_url: https://github.com/goodjwon/portfolio-test
 nav:
   - 소개: index.md
   - 실습 기록:
-      - blog/index.md
+      - 실습 기록: blog/index.md
 
 theme:
   name: material
@@ -17,22 +17,31 @@ theme:
     - navigation.top
     - navigation.footer
     - search.highlight
+    - navigation.tabs
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: white
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: 어두운 화면으로
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: 밝은 화면으로
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
   - blog:
       post_url_format: "{slug}"
+      post_date_format: "yyyy년 M월 d일"
 
 markdown_extensions:
   - admonition
